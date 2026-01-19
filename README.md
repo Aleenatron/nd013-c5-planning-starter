@@ -235,6 +235,17 @@ kill id
 
 <br/><br/>
 
+```bash
+#!/bin/bash
+
+SDL_VIDEODRIVER=offscreen \
+/opt/carla-simulator/CarlaUE4.sh \
+  -RenderOffScreen \
+  -opengl \
+  -quality-level=Low \
+  -nosound &
+```
+
 ## Step 8. Check the Rubric and Submit
 
 Re-check the rubric in the classroom and ensure that your submission satisfies all rubric criteria to pass the project. Once you are confident, submit the project. 
