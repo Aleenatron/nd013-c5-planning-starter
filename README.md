@@ -243,7 +243,9 @@ SDL_VIDEODRIVER=offscreen \
   -RenderOffScreen \
   -opengl \
   -quality-level=Low \
-  -nosound &
+  -nosound \
+  2>/tmp/carla_stderr.log &
+
 ```
 
 ## Step 8. Check the Rubric and Submit
