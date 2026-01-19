@@ -238,13 +238,16 @@ kill id
 ```bash
 #!/bin/bash
 
-SDL_VIDEODRIVER=offscreen \
+unset DISPLAY
+unset WAYLAND_DISPLAY
+
 /opt/carla-simulator/CarlaUE4.sh \
   -RenderOffScreen \
-  -opengl \
-  -quality-level=Low \
+  -nullrhi \
   -nosound \
+  -quality-level=Low \
   2>/tmp/carla_stderr.log &
+
 
 ```
 
